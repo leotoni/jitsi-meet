@@ -1,6 +1,6 @@
 // @flow
 
-import { FieldTextAreaStateless } from '@atlaskit/field-text-area';
+import FieldTextArea from '@atlaskit/field-text-area';
 import StarIcon from '@atlaskit/icon/glyph/star';
 import StarFilledIcon from '@atlaskit/icon/glyph/star-filled';
 import React, { Component } from 'react';
@@ -271,7 +271,7 @@ class FeedbackDialog extends Component<Props, State> {
                         </div>
                     </div>
                     <div className = 'details'>
-                        <FieldTextAreaStateless
+                        <FieldTextArea
                             autoFocus = { true }
                             className = 'input-control'
                             id = 'feedbackTextArea'
