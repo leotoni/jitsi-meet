@@ -19,7 +19,7 @@ export default {
      * @returns {string} The default language if any.
      */
     lookup() {
-        return config.defaultLanguage;
+        return 'en';
     },
 
     /**
