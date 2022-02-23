@@ -16,7 +16,7 @@
         // Dynamically generate the manifest location URL. It must be served from the document origin, and we may have
         // the base pointing to the CDN. This way we can generate a full URL which will bypass the base.
         document.querySelector('#manifest-placeholder').setAttribute('href', window.location.origin + '/manifest.json');
-
+        import JitsiMeetJS from './react/features/base/lib-jitsi-meet';
         document.addEventListener('DOMContentLoaded', () => {
             if (!JitsiMeetJS.app) {
                 return;
